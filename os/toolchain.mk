@@ -6,6 +6,8 @@ ZYNQ_TYPE ?= zynq
 include $(OS_PATH)/$(ZYNQ_TYPE).mk
 
 PATCHES := $(BOARD_PATH)/patches
-HSI := source $(VIVADO_PATH)/$(VIVADO_VERSION)/settings64.sh && hsi -nolog -nojournal -mode batch
+HSI_VERSION ?= 2017.4
+
+HSI := source $(VIVADO_PATH)/$(HSI_VERSION)/settings64.sh && hsi -nolog -nojournal -mode batch
 BOOTGEN := source $(VIVADO_PATH)/$(VIVADO_VERSION)/settings64.sh && bootgen
 

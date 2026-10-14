@@ -1,0 +1,7 @@
+0.7
+2020.2
+Nov 14 2025
+12:36:23
+/home/wshamsi/koheron-sdk/fpga/cores/delay_v1_0/delay_v1_0.sim/sim_1/behav/xsim/glbl.v,1756381829,verilog,,,,glbl,,,,,,,,
+/home/wshamsi/koheron-sdk/fpga/cores/delay_v1_0/delay_v1_0.srcs/sources_1/new/delay.v,1788429856,verilog,,/home/wshamsi/koheron-sdk/fpga/cores/delay_v1_0/delay_v1_0.srcs/sources_1/new/delay_tb.v,,delay,,,../../../../../../../../../../opt/Xilinx/2025.2/data/rsb/busdef,,,,,
+,,,,,,delay_tb,,,,,,,,

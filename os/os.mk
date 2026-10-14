@@ -122,7 +122,7 @@ devicetree: $(TMP_OS_PATH)/devicetree/system-top.dts
 
 $(TMP_OS_PATH)/devicetree/system-top.dts: $(TMP_FPGA_PATH)/$(NAME).hwdef $(DTREE_PATH) $(PATCHES)/devicetree.patch
 	mkdir -p $(@D)
-	$(HSI) -source $(FPGA_PATH)/hsi/devicetree.tcl -tclargs $(NAME) $(PROC) $(DTREE_PATH) $(VIVADO_VERSION) \
+	$(HSI) -source $(FPGA_PATH)/hsi/devicetree.tcl -tclargs $(NAME) $(PROC) $(DTREE_PATH) $(DTREE_VERSION) \
 	  $(TMP_OS_PATH)/hard $(TMP_OS_PATH)/devicetree $(TMP_FPGA_PATH)/$(NAME).hwdef
 	cp -R $(TMP_OS_PATH)/devicetree $(TMP_OS_PATH)/devicetree.orig
 	patch -d $(TMP_OS_PATH) -p -0 < $(PATCHES)/devicetree.patch

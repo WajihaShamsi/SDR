@@ -1,3 +1,4 @@
+declare var require: any;
 // Websocket based client for koheron-server...
 // (c) Koheron
 

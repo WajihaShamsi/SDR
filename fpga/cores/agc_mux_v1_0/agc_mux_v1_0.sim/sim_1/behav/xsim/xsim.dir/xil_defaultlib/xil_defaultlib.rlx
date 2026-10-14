@@ -1,0 +1,7 @@
+0.7
+2020.2
+Nov 14 2025
+12:36:23
+/home/wshamsi/koheron-sdk/fpga/cores/agc_mux_v1_0/agc_mux.v,1790868363,verilog,,,,agc_mux,,,../../../../../../../../../../opt/Xilinx/2025.2/data/rsb/busdef,,,,,
+/home/wshamsi/koheron-sdk/fpga/cores/agc_mux_v1_0/agc_mux_tb.v,1790864525,verilog,,/home/wshamsi/koheron-sdk/fpga/cores/agc_mux_v1_0/agc_mux.v,,agc_mux_tb,,,../../../../../../../../../../opt/Xilinx/2025.2/data/rsb/busdef,,,,,
+/home/wshamsi/koheron-sdk/fpga/cores/agc_mux_v1_0/agc_mux_v1_0.sim/sim_1/behav/xsim/glbl.v,1756381829,verilog,,,,glbl,,,,,,,,

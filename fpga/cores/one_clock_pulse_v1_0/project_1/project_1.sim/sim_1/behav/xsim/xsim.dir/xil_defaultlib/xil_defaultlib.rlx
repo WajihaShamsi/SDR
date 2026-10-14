@@ -1,0 +1,7 @@
+0.7
+2020.2
+Nov 14 2025
+12:36:23
+/home/wshamsi/koheron-sdk/fpga/cores/one_clock_pulse_v1_0/one_clock_pulse.v,1788355819,verilog,,/home/wshamsi/koheron-sdk/fpga/cores/one_clock_pulse_v1_0/one_clock_pulse_tb.v,,OneClockPulse,,,../../../../../../../../../../../opt/Xilinx/2025.2/data/rsb/busdef,,,,,
+/home/wshamsi/koheron-sdk/fpga/cores/one_clock_pulse_v1_0/one_clock_pulse_tb.v,1788356260,verilog,,,,OneClockPulse_tb,,,../../../../../../../../../../../opt/Xilinx/2025.2/data/rsb/busdef,,,,,
+/home/wshamsi/koheron-sdk/fpga/cores/one_clock_pulse_v1_0/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1756381829,verilog,,,,glbl,,,,,,,,
