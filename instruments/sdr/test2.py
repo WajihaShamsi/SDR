@@ -11,7 +11,7 @@ import time
 from sdr import Sdr
 from koheron import connect
 
-host = os.getenv('HOST', '10.42.0.139')
+host = os.getenv('HOST', '192.168.1.100')
 client = connect(host, name='sdr')
 driver = Sdr(client)
 
@@ -41,7 +41,7 @@ ax1.set_xlabel('FIFO sample number')
 ax1.set_ylabel('Signal after gain control I')
 ax2.set_xlabel('FIFO sample number')
 ax2.set_ylabel('Speaker signal')
-ax3.set_ylabel('Spectrum of speaker signal dB')
+ax3.set_ylabel('Spectrum of speaker signal dB')
 ax3.set_xlabel('Frequency 32 kHz full scale')
 fig.canvas.draw()
 print('enterring loop')
@@ -50,6 +50,8 @@ while True:
         data_rcv = driver.get_fifo_buffer()
         ToSpeaker = (np.int32(data_rcv % (2**16)) )  #16384) - 8192) % 16384 - 8192
         GainAdjusted_I = np.int32((data_rcv//(2**16)) % 2**16)   #16384) - 8192) % 16384 - 8192
+        print("Speaker:", np.min(ToSpeaker), np.max(ToSpeaker))
+        print("Gain-adjusted I:", np.min(GainAdjusted_I), np.max(GainAdjusted_I))
         print(driver.get_fifo_length(), np.mean(GainAdjusted_I), np.mean(GainAdjusted_I))
         neg=np.nonzero(GainAdjusted_I>(2**15))
         GainAdjusted_I[neg]=GainAdjusted_I[neg]-(2**16)
