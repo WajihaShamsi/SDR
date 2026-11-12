@@ -749,7 +749,7 @@ proc create_hier_cell_Local_Oscillator { parentCell nameHier } {
   # Create instance: blk_mem_gen_0, and set properties
   set blk_mem_gen_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.4 blk_mem_gen_0 ]
   set_property -dict [list \
-    CONFIG.Coe_File {/home/wshamsi/koheron-sdk/instruments/sdr/sinewave.coe} \
+    CONFIG.Coe_File {/home/wshamsi/workspace/koheron-sdk/instruments/sdr/sinewave.coe} \
     CONFIG.Load_Init_File {true} \
     CONFIG.Memory_Type {Dual_Port_ROM} \
     CONFIG.Write_Depth_A {2048} \
@@ -934,10 +934,10 @@ proc create_hier_cell_Radio { parentCell nameHier } {
   [get_bd_pins agc_mux_1/clk] \
   [get_bd_pins agc_mux_0/clk]
   connect_bd_net -net agc_mux_0_dout  [get_bd_pins agc_mux_0/dout] \
-  [get_bd_pins xlconcat_0/In0] \
-  [get_bd_pins xlconcat_1/In0]
+  [get_bd_pins xlconcat_0/In0]
   connect_bd_net -net agc_mux_1_dout  [get_bd_pins agc_mux_1/dout] \
-  [get_bd_pins xlconcat_0/In1]
+  [get_bd_pins xlconcat_0/In1] \
+  [get_bd_pins xlconcat_1/In0]
   connect_bd_net -net cordic_0_m_axis_dout_tdata  [get_bd_pins cordic_0/m_axis_dout_tdata] \
   [get_bd_pins Baseline_subtract/Din]
   connect_bd_net -net slice_7_0_ctl_led_Dout1  [get_bd_pins slice_7_0_ctl_led1/Dout] \
