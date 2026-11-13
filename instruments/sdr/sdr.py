@@ -61,3 +61,10 @@ class Sdr(object):
         assert(data_rcv[0] & (1 << 15) == (1 << 15))
         return data_rcv
 
+    @command()
+    def set_receive_frequency(self, frequency):
+        pass
+
+    @command()
+    def set_volume(self, volume):
+        pass
